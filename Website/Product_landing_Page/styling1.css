@@ -1,0 +1,97 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+  font-family: Lato, "sans-serif";
+  
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  background-color:white;
+  width: 100%;
+  z-index: 10;
+}
+
+img {
+  width: 10%;
+  height: auto;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  
+}
+
+
+#horizontal {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+body {
+  margin-top: 150px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background-color: #e0e0dc
+}
+
+#pricing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 20px;
+}
+
+input[type=email]  {
+  width: 300px;
+  margin: 15px;
+  padding: 10px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=email]:focus {
+  border: 3px solid #555;
+  width: 310px;
+}
+
+input[type=submit] {
+  padding: 14px 16px;
+  margin: 10px 0;
+  font-size: 14px;
+  top: 0;
+  position: relative;
+  border: none;
+  background-color: #00979d;
+  
+  color: #fff;
+}
+  
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}

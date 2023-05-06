@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  font-family: Poppins;
+}
+body {
+  background-color : #001639; 
+  color: #E3E3E3;
+}
+h1 {
+  font-size: 35px;
+}
+p {
+  font-size: 28px;
+}
+#welcome-section {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  
+}
+
+#projects {
+  height: 800px;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #212326;
+  z-index: 10;
+  
+  
+}
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+  list-style-type:none;
+}
+nav a {
+  padding: 100px;
+}
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: auto;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 39%;
+  
+  border-radius: 100px;
+}
+
+.codepen {
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #001639;
+  }
+}
